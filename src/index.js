@@ -1,13 +1,11 @@
 import mongoose from "mongoose";
-import express from 'express';
 import {DB_NAME} from './constants.js'
 import dotenv from "dotenv"
+import {app} from './app.js'
 
 dotenv.config({
-    path:'../env'
-})
-
-const app=express();
+    path:'./env'
+});
 
 (async()=>{
     try {
